@@ -2,21 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-li,
-span,
-a,
-button {
-  font-family: inherit;
+body {
+  font-family: "DM Sans", "sans-serif";
 }
 
 .bg-light {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.muted {
+  color: #777777;
 }
