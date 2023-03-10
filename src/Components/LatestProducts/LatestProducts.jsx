@@ -29,7 +29,6 @@ const LatestProducts = () => {
     },
   ];
 
-  console.log(latestProduct.map((product) => product.sale.length));
   return (
     <div>
       <div className="flex items-center justify-between my-5">
