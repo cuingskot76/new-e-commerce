@@ -64,23 +64,24 @@ const HotSales = () => {
               className="relative border border-blue-100 pb-3 rounded-md"
             >
               <div className="w-[200px]">
-                <img src={sale.img} alt="sale" className="w-full h-full" />
-              </div>
-              <div className="px-2">
-                <Paragraph style="font-medium pt-3 pb-2">
-                  {sale.desc.length > 30
-                    ? sale.desc.slice(0, 30) + " ..."
-                    : sale.desc}
-                </Paragraph>
-                <div className="flex gap-3 items-center">
-                  <Paragraph isSale={true} style="text-[14px] font-normal">
-                    Rp. {sale.sale}
+                <img src={sale.img} alt="sale" className="w-full h-full " />
+                <div className="px-2">
+                  <Paragraph style="font-medium pt-3 pb-2">
+                    {sale.desc.length > 30
+                      ? sale.desc.slice(0, 30) + " ..."
+                      : sale.desc}
                   </Paragraph>
-                  <Paragraph style="font-normal line-through text-[10px]">
-                    Rp. {sale.original}
-                  </Paragraph>
+                  <div className="flex gap-3 items-center">
+                    <Paragraph isSale={true} style="text-[14px] font-normal">
+                      Rp. {sale.sale}
+                    </Paragraph>
+                    <Paragraph style="font-normal line-through text-[10px]">
+                      Rp. {sale.original}
+                    </Paragraph>
+                  </div>
                 </div>
               </div>
+
               <div className="absolute items-center top-3 flex justify-between px-3 w-full">
                 <div className="bg-red-500 px-2 py-1 rounded-md text-white">
                   <Paragraph style="text-[10px]">{sale.percent}</Paragraph>

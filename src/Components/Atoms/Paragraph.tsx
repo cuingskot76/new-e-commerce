@@ -1,17 +1,13 @@
-import React, { PropsWithChildren } from "react";
+import React, { ReactNode } from "react";
 
-interface Props {
+interface ParagraphProps {
+  children: ReactNode;
   isMuted?: boolean;
   isSale?: boolean;
   style: string;
 }
 
-const Paragraph: React.FC<PropsWithChildren<Props>> = ({
-  children,
-  isMuted,
-  isSale,
-  style,
-}) => {
+const Paragraph = ({ children, isMuted, isSale, style }: ParagraphProps) => {
   return (
     <div
       className={`${isMuted && "muted"} ${isSale && "text-[#d61f11]"} ${style}`}

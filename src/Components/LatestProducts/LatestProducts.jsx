@@ -50,20 +50,20 @@ const LatestProducts = () => {
                   alt="product"
                   className="w-full h-full"
                 />
-              </div>
-              <div className="px-2">
-                <Paragraph style="font-medium pt-3 pb-2">
-                  {product?.desc?.length > 30
-                    ? product.desc.slice(0, 30) + "..."
-                    : product.desc}
-                </Paragraph>
-                <div className="flex gap-3 items-center">
-                  <Paragraph isSale={true} style="text-[14px] font-normal">
-                    Rp. {product.sale}
+                <div className="px-2">
+                  <Paragraph style="font-medium pt-3 pb-2">
+                    {product?.desc?.length > 30
+                      ? product.desc.slice(0, 30) + "..."
+                      : product.desc}
                   </Paragraph>
-                  <Paragraph style="font-normal line-through text-[10px]">
-                    Rp. {product.original}
-                  </Paragraph>
+                  <div className="flex gap-3 items-center">
+                    <Paragraph isSale={true} style="text-[14px] font-normal">
+                      Rp. {product.sale}
+                    </Paragraph>
+                    <Paragraph style="font-normal line-through text-[10px]">
+                      Rp. {product.original}
+                    </Paragraph>
+                  </div>
                 </div>
               </div>
               <div className="absolute items-center top-3 flex justify-between px-3 w-full">
