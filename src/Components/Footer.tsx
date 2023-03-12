@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar/Sidebar";
 
 const Footer = () => {
   const [isCategory, setIsCategory] = useState(false);
+
   const onHandleClick = () => {
     const links = document.querySelectorAll(".links");
 

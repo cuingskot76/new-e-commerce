@@ -2,8 +2,8 @@ import React, { ReactNode } from "react";
 
 interface ParagraphProps {
   children: ReactNode;
-  isMuted: boolean;
-  isSale: boolean;
+  isMuted?: boolean;
+  isSale?: boolean;
   style: string;
 }
 

@@ -82,3 +82,134 @@ export const latestProduct = [
     percent: "30%",
   },
 ];
+
+export const sidebar = [
+  {
+    id: 1,
+    img: "../../sidebar/home-sidebar.webp",
+    desc: "Home",
+  },
+  {
+    id: 2,
+    img: "../../sidebar/man-sidebar.webp",
+    desc: "Man",
+    menu: [
+      {
+        id: 1,
+        desc: "Top",
+        subMenu: [
+          "T-Shirts",
+          "T-Shirts (Striped)",
+          "T-Shirts (Oversized)",
+          "T-Shirts (Long Sleeve)",
+          "Polo Shirts",
+          "Long Shirts",
+          "Short Shirts",
+          "Hoodies",
+          "Sweaters",
+          "Jackets | Vests",
+          "Knitwears",
+        ],
+      },
+      {
+        id: 2,
+        desc: "Bottom",
+        subMenu: [
+          "Jeans",
+          "Chinos",
+          "Jogger & Cargo",
+          "Shorts",
+          "Boxer & Briefs",
+        ],
+      },
+      {
+        id: 3,
+        desc: "Accessories",
+        subMenu: [
+          "Backpack & Travel Bags",
+          "Waist & Sling Bags",
+          "Hats & Beanies",
+          "Sandals",
+          "Shoes",
+          "Wallets",
+          "Watches",
+          "Belts",
+          "Sunglasses",
+          "Others",
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
+    img: "../../sidebar/woman-sidebar.webp",
+    desc: "Woman",
+    menu: [
+      {
+        id: 1,
+        desc: "Top",
+        subMenu: [
+          "T-shirts (Short Sleeve)",
+          "T-Shirts (Long Sleeve)",
+          "Shirts & Blouses",
+          "Dresses & Tunic",
+          "Sweaters",
+          "Jackets",
+          "Knitwears",
+        ],
+      },
+      {
+        id: 2,
+        desc: "Bottom",
+        subMenu: ["Pants", "Skirt"],
+      },
+      {
+        id: 3,
+        desc: "Accessories",
+        subMenu: [
+          "Scarves",
+          "Bags",
+          "Sunglasses",
+          "Sandals",
+          "Socks",
+          "Wallets",
+          "Hats",
+          "Tumbler",
+          "Watches",
+        ],
+      },
+    ],
+  },
+  {
+    id: 4,
+    img: "../../sidebar/kids-sidebar.webp",
+    desc: "Kids",
+    menu: [
+      {
+        id: 1,
+        desc: "Boys",
+        subMenu: [
+          "T-Shirts",
+          "Shirts",
+          "Sweaters",
+          "Jackets",
+          "Pants",
+          "Accessories",
+        ],
+      },
+      {
+        id: 2,
+        desc: "Girls",
+        subMenu: [
+          "T-Shirts",
+          "Dress & Blouses",
+          "Sweaters",
+          "Jackets",
+          "Pants",
+          "Skirts",
+          "Accessories",
+        ],
+      },
+    ],
+  },
+];

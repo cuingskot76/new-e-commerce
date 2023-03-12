@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
 const SearchBar = ({ setIsSearch }) => {
-  const ref = useRef();
+  const ref = useRef(null);
 
   useEffect(() => {
     ref.current.focus();
