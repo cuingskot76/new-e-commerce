@@ -1,34 +1,8 @@
 import React from "react";
 import Paragraph from "../Atoms/Paragraph";
+import { latestProduct } from "../constants";
 
 const LatestProducts = () => {
-  const latestProduct = [
-    {
-      id: 1,
-      img: "../../products/hoodie-products.jpg",
-      desc: "Greenlight Jaket Crop Hoodie Zipper Wanita 071222",
-      original: "379.00",
-      sale: "304.500",
-      percent: "20%",
-    },
-    {
-      id: 2,
-      img: "../../products/sling-bag-products.jpg",
-      desc: "Greenlight Quilted Sling Bag 011222",
-      original: "450.650",
-      sale: "343.321",
-      percent: "30%",
-    },
-    {
-      id: 3,
-      img: "../../products/jeans-products.jpg",
-      desc: "Greenlight Celana Wide Leg Jeans 161222      ",
-      original: "489.500",
-      sale: "342.500",
-      percent: "30%",
-    },
-  ];
-
   return (
     <div>
       <div className="flex items-center justify-between my-5">

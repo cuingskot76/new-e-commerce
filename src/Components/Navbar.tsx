@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import SearchBar from "./SearchBar";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isSearch, setIsSearch] = useState(false);
 
   return (
     <div className="flex items-center justify-between border-b-2 border-gray-100 px-4 py-4">
-      <h1 className="font-head text-3xl font-bold">
-        af<span className="text-red-500">rzl.</span>
-      </h1>
+      <Link to="/">
+        <span className="font-head text-3xl font-bold">
+          {/* af<span className="text-red-500">rzl.</span> */}
+          af<span className="text-[#39C7A5]">rzl.</span>
+        </span>
+      </Link>
       <div className="flex gap-7">
         {isSearch ? (
           <SearchBar setIsSearch={setIsSearch} />

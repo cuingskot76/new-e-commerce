@@ -5,23 +5,9 @@ import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { hero } from "./constants";
 
 const Hero = () => {
-  const hero = [
-    {
-      id: 1,
-      img: "../../hero/hero-3second.jpg",
-    },
-    {
-      id: 2,
-      img: "../../hero/hero-famo.jpg",
-    },
-    {
-      id: 3,
-      img: "../../hero/hero-moutley.jpg",
-    },
-  ];
-
   return (
     <div className="">
       <Swiper

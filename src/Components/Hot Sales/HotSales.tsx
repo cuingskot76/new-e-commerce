@@ -3,61 +3,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Paragraph from "../Atoms/Paragraph";
 import "swiper/css";
 import { Pagination } from "swiper";
+import { Link } from "react-router-dom";
+import { hotSales } from "../constants";
 
 const HotSales = () => {
-  const sales = [
-    {
-      id: 1,
-      img: "../../sale/jacket-sale.jpg",
-      desc: "3Second Hoodie Oversize Pria 070722",
-      original: "449.500",
-      sale: "224.500",
-      percent: "50%",
-    },
-    {
-      id: 2,
-      img: "../../sale/jacket-woman-sale.jpg",
-      desc: "Famo Cardigan Wanita 020822",
-      original: "289.650",
-      sale: "201.720",
-      percent: "30%",
-    },
-    {
-      id: 3,
-      img: "../../sale/long-shirt-sale.jpg",
-      desc: "3Second Kaos Wanita 141222",
-      original: "198.500",
-      sale: "135.500",
-      percent: "20%",
-    },
-    {
-      id: 4,
-      img: "../../sale/t-shirt-sale.jpg",
-      desc: "Greenlight Kaos Pria 141122",
-      original: "189.240",
-      sale: "151.200",
-      percent: "20%",
-    },
-    {
-      id: 5,
-      img: "../../sale/vest-sale.jpg",
-      desc: "Greenlight Jaket Bomber Pria 071222",
-      original: "519.500",
-      sale: "259.500",
-      percent: "50%",
-    },
-  ];
-
   return (
     <div>
       <div className="flex items-center justify-between mt-5 mb-3">
         <Paragraph style="text-xl font-bold">Hot Sales</Paragraph>
-        <Paragraph isMuted={true} style="cursor-pointer">
-          See all
-        </Paragraph>
+        <Link to="/sale-product">
+          <Paragraph isMuted={true} style="cursor-pointer">
+            See all
+          </Paragraph>
+        </Link>
       </div>
       <div className="flex gap-5">
-        {sales.map((sale) => {
+        {hotSales.map((sale) => {
           return (
             <div
               key={sale.id}
